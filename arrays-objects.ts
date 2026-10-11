@@ -17,6 +17,12 @@ user=["ali",'omer']
 user=[7,1, true]
 
 
+//Tuple: array
+let possibleResult : [number,number] ;
+possibleResult =[1,-1];
+possibleResult =[1,-1,1];//error as we need 2 number only
+
+
 
 
 
