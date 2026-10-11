@@ -25,5 +25,25 @@ possibleResult =[1,-1,1];//error as we need 2 number only
 
 
 
+//Object Types
+
+let user1: {
+    name:string,
+    age:number | string;
+    hobbies:string[],
+    role:{
+        description: string;
+        id: number
+    }
+}={
+    name:"ali",
+    age:"4",
+    hobbies: ['cookig','playing'],
+    role:{
+        description: "dddd",
+        id: 44
+    }
+
+}
 
 
