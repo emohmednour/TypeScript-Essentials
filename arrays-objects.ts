@@ -59,3 +59,30 @@ val =true;
 
 val =null;
 val =undefined;
+
+
+//Record
+
+let data :Record<string, string| number | boolean>;
+
+data={};
+data={entry:1 , 1:1, entry2:"max"}; 
+//في JavaScript، أسماء الخصائص هي في الحقيقة نصوص، حتى لو كتبتها من غير علامات تنصيص:
+//  = "1":1
+data={entry:true};
+data=0;
+data="hallo";
+
+let scores :Record<string,number> = {};
+scores["max"] = 23;
+scores["aliax"] = 53
+scores["moSAlaoah"] = "23" // error
+
+
+
+
+
+
+
+
+
