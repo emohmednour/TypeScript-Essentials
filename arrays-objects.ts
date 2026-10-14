@@ -46,4 +46,16 @@ let user1: {
 
 }
 
+user1.hobbies.push("fishing");
 
+
+//Empty obj
+let val :{};
+val ="maz";
+val =["ww",8];
+val={name:"ali",age:99};
+val =true;
+
+
+val =null;
+val =undefined;
