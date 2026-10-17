@@ -21,3 +21,9 @@ type User = {
     role? : "admin" | "guset"
 };
 
+
+function setvalue(volume? :number){
+    const v1 = volume || 77;
+    const v2 = volume ?? 77;
+
+}
