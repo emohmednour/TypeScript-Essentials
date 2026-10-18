@@ -7,6 +7,11 @@ b="max";
 b= null;
 b= undefined; // error
 
+
+let x:null ="ss";
+x="max";
+x = null 
+
 //use it in 
 let currentUser : null|string;
 currentUser = "exist"
