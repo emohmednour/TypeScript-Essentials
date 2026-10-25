@@ -50,3 +50,15 @@ console.log(editor.FullName);
 // console.log(editor._firstName); // srror
 
 
+// ststic
+class User2{
+    constructor(public fist :string ){}
+
+    static aid ='user';
+    static greed(){
+        console.log("hii");
+    }
+}
+
+console.log(User2.aid);
+User2.greed();

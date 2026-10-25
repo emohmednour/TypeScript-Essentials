@@ -37,7 +37,19 @@ const editor = new Editor();
 editor.firstName = "mo";
 editor.lastName = "ali";
 console.log(editor.FullName);
-export {};
 // editor.firstName = 1; error
 // editor.firstName = " "; // error while run time
 // console.log(editor._firstName); // srror
+class User2 {
+    fist;
+    constructor(fist) {
+        this.fist = fist;
+    }
+    static aid = 'user';
+    static greed() {
+        console.log("hii");
+    }
+}
+console.log(User2.aid);
+User2.greed();
+export {};
