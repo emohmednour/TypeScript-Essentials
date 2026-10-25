@@ -19,7 +19,7 @@ console.log(client)
 
 //readonly 
 class Activities{
-    readonly hobiies :string[] =[];
+    readonly hobiies :string[] =["reading"];
 
 }
 const act = new Activities();
@@ -27,3 +27,4 @@ const act = new Activities();
 console.log(act.hobiies); // ok
 // act.hobiies = ["sport"] ;// error = read only property
 act.hobiies.push("aport");// ok!
+console.log(act.hobiies); // ok
