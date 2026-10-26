@@ -23,6 +23,9 @@ class  Editor{
         this._firstName = name;
 
     }
+    get firstName(){
+        return this._firstName;
+    }
     set lastName(name : string){
         if(name.trim() === ""){
             throw new Error("inValid Input");
@@ -62,3 +65,24 @@ class User2{
 
 console.log(User2.aid);
 User2.greed();
+
+
+class Employee extends Editor{
+    constructor(public JobTitel : string){
+        super();
+        super.firstName = "max";
+        
+
+        
+    }
+    work(){
+       console.log(super.firstName + " job:" + this.JobTitel)
+    }
+}
+
+const emp = new Employee( "Developer");
+emp.firstName = "max";
+emp.lastName = " alimax";
+
+// console.log(emp.FullName);   // موروث
+emp.work();
