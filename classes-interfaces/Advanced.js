@@ -23,9 +23,6 @@ class Editor {
         }
         this._firstName = name;
     }
-    get firstName() {
-        return this._firstName;
-    }
     set lastName(name) {
         if (name.trim() === "") {
             throw new Error("inValid Input");
@@ -72,4 +69,23 @@ emp.firstName = "max";
 emp.lastName = " alimax";
 // console.log(emp.FullName);   // موروث
 emp.work();
+//Abstract class
+class UIElement {
+    Identifier;
+    constructor(Identifier) {
+        this.Identifier = Identifier;
+    }
+    clone(targetLocation) {
+    }
+}
+// const uiel  = new UIElement("144"); error
+class SideDrawerElement extends UIElement {
+    position;
+    constructor(Identifier, position) {
+        super(Identifier);
+        this.position = position;
+    }
+}
+const uiel = new SideDrawerElement("14", 'left');
+uiel.clone;
 export {};

@@ -12,7 +12,7 @@ console.log(max.FullName);
 // Setter
 
 class  Editor{
-    private _firstName : string = "";
+    protected _firstName : string = "";
     private _lastName : string = "";
 
     set firstName(name : string){
@@ -23,9 +23,7 @@ class  Editor{
         this._firstName = name;
 
     }
-    get firstName(){
-        return this._firstName;
-    }
+    
     set lastName(name : string){
         if(name.trim() === ""){
             throw new Error("inValid Input");
@@ -86,3 +84,26 @@ emp.lastName = " alimax";
 
 // console.log(emp.FullName);   // موروث
 emp.work();
+
+
+//Abstract class
+abstract class UIElement{
+    constructor(public Identifier: string) {}
+
+    clone(targetLocation : String){
+
+    }
+}
+
+// const uiel  = new UIElement("144"); error
+
+class SideDrawerElement  extends UIElement{
+    constructor(Identifier: string , public position : 'left'|'right'){
+        super(Identifier);
+
+
+    }
+}
+
+const uiel  = new SideDrawerElement("14",'left');
+uiel.clone;
